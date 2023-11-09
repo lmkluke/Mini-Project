@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        fieldset {
+            margin: auto;
+            background-color: chartreuse;
+            width: 30%;
+            border-radius: 10%;
+            border: 0;
+            height: 500px;
+            padding: 2%;
+        }
+        img {
+            width: 10%;
+            height: 9%;
+        }
+        label {
+            font-size: large;
+            text-align: left;
+        }
+        #valid {
+            width: 30%;
+        }
+        button {
+            width: 100px;
+            border: 20px;
+            height: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h3>please choose a payment method</h3>
+            <p>Personal information</p>
+            <!--Name and Email-->;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp
+            <label for="fname">Full Name</label> <label for="email">Email</label><br>
+            <input type="text" name="name" id="name" value="Kylie">  &nbsp;<input type="text" name="email" id="email" vaule="example@gmail.com"><br><br>
+             
+            <!--Radio Button-->
+            <label>Choose a payment method</label><br><br>
+            <input type="radio" name="payment" id="paypal">
+            <label for="paypal" ><img src="Image/PAYPAL.png" alt="PAYPAL"></label>
+            <input type="radio" name="payment" id="apple pay">
+            <label for="apple pay"><img src="Image/APPLE.png" alt="APPLE"></label>
+            <input type="radio" name="payment" id="gpay">
+            <label for="gpay"><img src="Image/GPAY.png" alt="GPAY"></label>
+            <input type="radio" name="payment" id="Visa">
+            <label for="Visa"><img src="Image/VISER.png" alt="VISER"></label>
+
+            <!--Card number and password-->
+            <label for="Credit card number">Credit card number</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <label for="password">password</label><br>
+            <input type="text" name="number" id="number">&nbsp; <input type="text" name="password" id="password"><br> 
+
+            <!--Drop down list-->
+            <label for="valid">Valid</label><br>
+            <select id="valid" name="valid" size="2" multiple>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input id="year" name="year" placeholder="year"><br><br>
+                <button type="submit" style="background-color: darkblue;">Cancel</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<button type="submit" style="background-color: rebeccapurple;">Submit</button>
+
+            </select>
+        </fieldset>
+    </form>    
+</body>
+</html>
